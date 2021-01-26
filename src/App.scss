@@ -1,0 +1,16 @@
+@import "./styles/main";
+
+.main__content {
+  background: #fefefe;
+  flex: 0 0 64%;
+  overflow-y: auto !important;
+  height: 100vh;
+}
+
+.shopping__cart {
+  min-height: 100vh;
+  flex: 0 0 30%;
+  background: $pink;
+  overflow-y: auto !important;
+  height: 100vh;
+}
