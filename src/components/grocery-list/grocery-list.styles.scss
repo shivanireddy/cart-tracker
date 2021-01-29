@@ -1,0 +1,106 @@
+@import "../../styles/main";
+
+.grocery {
+  &__list {
+    margin: 2rem 0rem;
+    width: 100%;
+    background: $white;
+    border-radius: 5px;
+    padding: 1.2rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+    position: relative;
+  }
+
+  &__left {
+    p {
+      color: $gray;
+      font-size: 1.4rem;
+      font-weight: $bold;
+    }
+  }
+  &__right {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+.calender {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0rem 2rem;
+  img {
+    width: 12px;
+    height: 12px;
+    margin-right: 1rem;
+  }
+  p {
+    align-self: center;
+    color: $light-gray;
+    font-weight: $bold;
+    font-size: 1.2rem;
+  }
+}
+
+.shopping-summary {
+  font-size: 1.4rem;
+  color: $dark-blue;
+  font-weight: $bold;
+}
+
+.dropdown__select {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+  cursor: pointer;
+  img {
+    max-width: 100%;
+  }
+}
+
+.dropdown {
+  &__menu {
+    width: max-content;
+    background: $white;
+    font-size: 1.4rem;
+    border: 1px solid $white;
+    padding: 1rem 1.5rem;
+    position: absolute;
+    bottom: -8.5rem;
+    right: 0rem;
+    z-index: 10;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  &__option {
+    margin: 0.5rem 0;
+    width: 100%;
+    color: $dark-blue;
+    cursor: pointer;
+    padding: 0.4rem 1.8rem;
+    text-transform: uppercase;
+    font-weight: $bold;
+    letter-spacing: 2px;
+
+    &--completed {
+      &:hover {
+        background: $success;
+        color: $white;
+      }
+    }
+
+    &--cancelled {
+      &:hover {
+        background: $error;
+        color: $white;
+      }
+    }
+  }
+}
